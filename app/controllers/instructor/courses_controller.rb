@@ -19,6 +19,10 @@ def show
 
 private
 
+def course_params
+  params.require(:course).permit(:image)
+end
+
 def require_authorized_for_current_course
   if current_course.user != current_user
     render plain: "Unauthorized", status: :unauthorized
