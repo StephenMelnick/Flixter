@@ -14,7 +14,7 @@ else
   end
 end
 
-def show
+  def show
   end
 
 private
